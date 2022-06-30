@@ -3,14 +3,24 @@
   font-family: 'Roboto', sans-serif;
 } */
 
-body {
+.body {
   font-family: 'Roboto', sans-serif;
+  color: #212121;
 }
 
+/* Різні кольори тексту потрібно додати */
 .logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+}
+
+/* Портфолио */
+
+/* Стиль картинок, размер */
+.gallery-img {
+  width: 370px;
+  height: 294px;
 }
