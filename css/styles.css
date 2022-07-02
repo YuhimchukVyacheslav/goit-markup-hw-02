@@ -3,24 +3,211 @@
   font-family: 'Roboto', sans-serif;
 } */
 
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* txt colors */
+  --main-txt-cl: #212121;
+  --main-txt-item: #757575;
+  --main-link-cl: #2196f3;
+  --btn-txt-cl: #ffffff;
+  --second-header-logo-cl: #000000;
+
+  /* bg colors */
+  --dark-bg-cl: #2f303a;
+  --team-bg-cl: #f5f4fa;
+  --main-bt-bg-cl: #188ce8;
+
+  /* others */
+}
 .body {
-  font-family: 'Roboto', sans-serif;
-  color: #212121;
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
 }
 
-/* Різні кольори тексту потрібно додати */
-.logo {
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+/* base styles */
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* .btn-mode-light {
+} */
+.btn-mode-dark {
+  color: var(--btn-txt-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+/* header */
+
+.header-logo,
+.footer-logo {
+  color: var(--second-header-logo-cl);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
+}
+.accent-header,
+.accent-footer {
+  color: var(--main-link-cl);
+}
+
+.header-item,
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+/* header hover focus */
+
+.header-link:hover,
+.header-link:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--main-link-cl);
+}
+
+.header-contacts {
+  color: var(--main-txt-item);
+}
+
+.header-link-current {
+  color: var(--main-link-cl);
+}
+
+/* hero */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  color: #ffffff;
+}
+
+.hero-btn {
+  background: var(--main-link-cl);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--main-bt-bg-cl);
+}
+
+.hero,
+.footer {
+  background: var(--dark-bg-cl);
+}
+
+/* <!-- Особенности --> */
+.features-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+}
+.features-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* <!-- Чем мы занимаемся --> */
+.work-title,
+.team-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+/* <!-- Наша команда --> */
+.team,
+.portfolio-item-btn {
+  background: var(--team-bg-cl);
+}
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+.team-item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  columns: var(--main-txt-item);
+}
+
+/* footer */
+
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer-item-map {
+  color: #ffffff;
+}
+.footer-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--main-link-cl);
+}
+.second-footer-cl {
+  color: var(--btn-txt-cl);
 }
 
 /* Портфолио */
 
-/* Стиль картинок, размер */
-.gallery-img {
-  width: 370px;
-  height: 294px;
+.portfolio-item-btn:hover,
+.portfolio-item-btn:focus,
+.current-btn {
+  background: var(--main-link-cl);
+  color: var(--btn-txt-cl);
+}
+
+.portfolio-list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+}
+
+.gallery-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.gallery-item-descr {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
 }
