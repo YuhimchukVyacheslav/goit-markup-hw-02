@@ -18,12 +18,16 @@
   --dark-bg-cl: #2f303a;
   --team-bg-cl: #f5f4fa;
   --main-bt-bg-cl: #188ce8;
+  --white-bg-cl: #ffffff;
 
   /* others */
 }
 .body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  background-color: var(--white-bg-cl);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* reset styles */
@@ -42,14 +46,6 @@
   cursor: pointer;
 }
 
-/* .btn-mode-light {
-} */
-.btn-mode-dark {
-  color: var(--btn-txt-cl);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-}
 /* header */
 
 .header-logo,
@@ -70,7 +66,6 @@
 .header-mail,
 .header-tel {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
@@ -98,11 +93,17 @@
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  color: #ffffff;
+  color: var(--btn-txt-cl);
+  text-transform: uppercase;
 }
 
 .hero-btn {
+  color: var(--btn-txt-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
   background: var(--main-link-cl);
+  letter-spacing: 0.06em;
 }
 
 .hero-btn:hover,
@@ -116,16 +117,26 @@
 }
 
 /* <!-- Особенности --> */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .features-title {
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .features-descr {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  color: var(--main-txt-item);
 }
 
 /* <!-- Чем мы занимаемся --> */
@@ -133,7 +144,6 @@
 .team-title {
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
 }
 
 /* <!-- Наша команда --> */
@@ -146,23 +156,19 @@
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
 }
 .team-item-descr {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
-  columns: var(--main-txt-item);
+  color: var(--main-txt-item);
 }
 
 /* footer */
 
 .footer-list {
   font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -176,7 +182,9 @@
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
-.footer-tel:focus {
+.footer-tel:focus,
+.footer-item-map:hover,
+.footer-item-map:focus {
   color: var(--main-link-cl);
 }
 .second-footer-cl {
@@ -186,17 +194,22 @@
 /* Портфолио */
 
 .portfolio-item-btn:hover,
-.portfolio-item-btn:focus,
-.current-btn {
+.portfolio-item-btn:focus {
   background: var(--main-link-cl);
   color: var(--btn-txt-cl);
 }
 
-.portfolio-list-btn {
+.portfolio-item-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.current-btn {
+  background: var(--main-link-cl);
+  color: var(--btn-txt-cl);
 }
 
 .gallery-item-title {
@@ -209,5 +222,5 @@
 .gallery-item-descr {
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
+  color: var(--main-txt-item);
 }
