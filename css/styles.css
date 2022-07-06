@@ -131,6 +131,7 @@
   margin: -1px;
 }
 .features-title {
+  font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
 }
